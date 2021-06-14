@@ -1,0 +1,509 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial;
+}
+/*#BodyContent{
+    position:relative;
+    top:130px;
+}*/
+.nave {
+    background-color: lightgray;
+    height: 100px;
+}
+.nomlog{
+    font-family:'Trebuchet MS';
+}
+
+.subnave {
+    background-color: gray;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.checkbox {
+    display: none;
+}
+
+    .checkbox:checked ~ .menulateral {
+        margin-left: 0;
+    }
+
+.menulateral {
+    background-color: #293133;
+    padding: 10px;
+    width: 30%;
+    min-height: 100%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    top: 130px;
+    bottom: 0px;
+    margin-left: -30%;
+    transition: left 0.7s;
+    z-index: 2;
+    overflow: auto;
+}
+
+li:hover {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+
+div {
+    margin: 0;
+    padding: 0;
+}
+.botoncierre{
+    background:none;
+    border:none;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.titulomenu {
+    background-color: none;
+    font-weight: bold;
+}
+
+#logo {
+    margin: 10px;
+    height: 80px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.mGrid button {
+    background-color: black;
+    border-color: black;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    color: white;
+}
+
+.ultimomenu {
+    margin-bottom: 150px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+    li a:hover {
+        text-decoration: none;
+        color: red;
+    }
+
+.baseform {
+    text-align: center;
+}
+
+.formulario {
+    padding: 10px;
+    width: 50%;
+    border-color: black;
+    margin: 20px;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS';
+}
+.formularioDos {
+    padding: 10px;
+    /*width: 50%;*/
+    border-color: black;
+    margin: 20px;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS';
+}
+
+.botonsubmit {
+    background-color: black;
+    border-color: black;
+    width: 50%;
+    font-family: 'Trebuchet MS';
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.botonedit {
+    background-color: #252850;
+    border-color: white;
+    width: 40px;
+    height: 10px;
+    font-family: 'Trebuchet MS';
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 3px;
+    text-decoration: none;
+}
+
+/*.mGrid {
+    width: 100%;
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: none;
+    border-collapse: collapse;
+}
+
+    .mGrid td {
+        padding: 20px;
+        border: none;
+        color: #717171;
+    }
+
+    .mGrid th {
+        padding: 4px 2px;
+        color: #252850;
+        background: #fff url(grd_head.png) repeat-x top;
+        border-left: none;
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+
+    .mGrid .alt {
+        background: #c2c2c2 url(grd_alt.png) repeat-x top;
+    }
+
+    .mGrid .pgr {
+        background: #424242 url(grd_pgr.png) repeat-x top;
+    }
+
+        .mGrid .pgr table {
+            margin: 5px 0;
+        }
+
+        .mGrid .pgr td {
+            border-width: 0;
+            padding: 0 6px;
+            border-left: none;
+            font-weight: bold;
+            color: #fff;
+            line-height: 12px;
+        }
+
+        .mGrid .pgr a {
+            color: #666;
+            text-decoration: none;
+        }
+
+            .mGrid .pgr a:hover {
+                color: #000;
+                text-decoration: none;
+            }*/
+.mGrid {
+    width: 100%;
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+}
+
+    .mGrid td {
+        padding: 14px;
+        color: #717171;
+        text-align: center;
+    }
+
+    .mGrid th {
+        padding: 4px 16px;
+        color: white;
+        background: gray;
+        font-size: 0.9em;
+        text-align: center;
+        height: 40px;
+    }
+
+    .mGrid .alt {
+        background: #fcfcfc url(grd_alt.png) repeat-x top;
+    }
+
+    .mGrid .pgr {
+        background: #75bcb5;
+    }
+
+        .mGrid .pgr table {
+            margin: 5px 0;
+        }
+
+        .mGrid .pgr td {
+            border-width: 0;
+            padding: 0 6px;
+            font-weight: bold;
+            color: #fff;
+            line-height: 12px;
+        }
+
+        .mGrid .pgr a {
+            color: #666;
+            text-decoration: none;
+        }
+
+            .mGrid .pgr a:hover {
+                color: #000;
+                text-decoration: none;
+            }
+
+
+
+input[type="file"] {
+    display: inherit;
+}
+
+
+.fijador {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.fijadordos {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 100px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.panelbloqueadorizq {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    top: 130px;
+    bottom: 0px;
+    left: -100%;
+    display: flex;
+    transition: left;
+    z-index: 1;
+}
+
+.checkbox:checked ~ .panelbloqueadorizq {
+    left: 0;
+}
+
+#cajacontenedor {
+    margin-top: 130px;
+    position: relative;
+    background-color: white;
+    width: 100%;
+    padding-left:15px;
+    padding-right:15px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 25px;
+}
+
+.centrador {
+    text-align: center;
+}
+
+center a {
+    display: none;
+}
+h2{
+    color:black;
+}
+.tabla{
+    width:60%;
+    margin-left:30%;
+}
+/*test*/
+.direcverif {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+    background-color: white;
+}
+
+.delivery:checked ~ .direcverif {
+    height: auto;
+}
+
+.direccion {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+    background-color: white;
+}
+
+.deliveryno:checked ~ .direccion {
+    height: auto;
+}
+
+.metodo {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+    background-color: white;
+}
+.metodoDOS {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+    background-color: white;
+}
+
+
+
+.deliverysi:checked ~ .metodo {
+    height: auto;
+}
+
+.metodoTRES {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+    background-color: white;
+}
+
+.pickup:checked ~ .metodo {
+    height: auto;
+}
+.pickupDOS:checked ~ .metodoDOS {
+    height: auto;
+}
+.pickupTRES:checked ~ .metodoTRES {
+    height: auto;
+}
+
+.datospago {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+    background-color: white;
+}
+
+.pagodig:checked ~ .datospago {
+    height: auto;
+}
+
+
+.deliveryno:checked ~ .metodo {
+    height: auto;
+}
+
+.botonconfirma {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+    background-color: white;
+}
+
+.pagodig:checked ~ .botonconfirma {
+    height: auto;
+}
+
+.pagoefectivo {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+    background-color: white;
+}
+
+.efectivo:checked ~ .pagoefectivo {
+    height: auto;
+}
+
+formpago {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+    background-color: white;
+}
+
+.pagodig:checked ~ .formpago {
+    height: auto;
+}
+
+.titulocierre {
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    color: black;
+    font-weight: bold;
+}
+
+.opcionescierre {
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    color: dimgray;
+    white-space:pre-wrap;
+}
+
+.nombrecierre {
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    color: red;
+    font-weight: bold;
+}
+
+.busqueda {
+    margin: 10px 10px 10px 10px;
+    height: 60px;
+    border-radius: 20px 0px 0px 20px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    border-color: black;
+}
+#botonbuscar {
+    margin: 10px 10px 10px -15px;
+    height: 60px;
+    width: 60px;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 20px;
+    border-color: black;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+.form-row {
+    display: -ms-flexbox;
+    /*display: flex;*/
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.container {
+    width: 50%;
+    margin: 10px auto;
+}
